@@ -837,15 +837,6 @@ let backSpaceCount = 0;
 let randomWord, finalWord;
 
 //Detect touch device
-const isTouchDevice = () => {
-  try {
-    //We try to create TouchEvent (it would fail for desktops and throw error)
-    document.createEvent("TouchEvent");
-    return true;
-  } catch (e) {
-    return false;
-  }
-};
 
 //Initial Setup
 const startGame = async () => {
